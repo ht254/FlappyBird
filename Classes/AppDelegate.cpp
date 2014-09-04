@@ -13,10 +13,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     auto director = Director::getInstance();
     auto glView = director->getOpenGLView();
 
-	if(!glView) {
-		glView = GLView::createWithRect("Flappy Bird", Rect(0, 0, 360, 640));
-		director->setOpenGLView(glView);
-	}
+    if(!glView) {
+        glView = GLView::createWithRect("Flappy Bird", Rect(0, 0, 360, 640));
+        director->setOpenGLView(glView);
+    }
 
     // turn on display FPS
     director->setDisplayStats(false);
@@ -24,11 +24,11 @@ bool AppDelegate::applicationDidFinishLaunching()
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
 
-	glView->setDesignResolutionSize(288, 512, ResolutionPolicy::NO_BORDER);
+    glView->setDesignResolutionSize(288, 512, ResolutionPolicy::NO_BORDER);
 
-	srand(time(NULL));
+    srand(time(NULL));
 
-	preloadSFX();
+    preloadSFX();
 
     // create a scene. it's an autorelease object
     auto scene = MenuScene::createScene();
@@ -59,14 +59,14 @@ void AppDelegate::applicationWillEnterForeground()
 
 void AppDelegate::preloadSFX()
 {
-	auto audioEngine = CocosDenshion::SimpleAudioEngine::getInstance();
+    auto audioEngine = CocosDenshion::SimpleAudioEngine::getInstance();
 
-	audioEngine->preloadEffect(SFX_DIE);
-	audioEngine->preloadEffect(SFX_HIT);
-	audioEngine->preloadEffect(SFX_POINT);
-	audioEngine->preloadEffect(SFX_SWOOSHING);
-	audioEngine->preloadEffect(SFX_WING);
+    audioEngine->preloadEffect(SFX_DIE);
+    audioEngine->preloadEffect(SFX_HIT);
+    audioEngine->preloadEffect(SFX_POINT);
+    audioEngine->preloadEffect(SFX_SWOOSHING);
+    audioEngine->preloadEffect(SFX_WING);
 
-	audioEngine->setEffectsVolume(0.4f);
+    audioEngine->setEffectsVolume(0.4f);
 }
 
