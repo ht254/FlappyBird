@@ -9,25 +9,25 @@ class Bird : public Sprite
 {
 public:
 
-	bool init();
-	CREATE_FUNC(Bird);
+    bool init();
+    CREATE_FUNC(Bird);
 
-	void update(float dt);
-	void flyUp();
-	void fall();
-	void die();
+    void update(float dt);
+    void flyUp();
+    void fall();
+    void die();
 
 private:
 
-	enum class State { Normal, FlyingUp, Falling };
+    enum class State { Normal, FlyingUp, Falling };
 
-	Action* normalAnimation;
-	Action* flyAnimation;
-	Action* fallAnimation;
-	State state;
-	Size visibleSize;
-	float velocity;
-	float gravity;
+    Action* normalAnimation;
+    Action* flyAnimation;
+    Action* fallAnimation;
+    State state;
+    Size visibleSize;
+    float velocity;
+    float gravity;
 
 };
 

@@ -13,7 +13,7 @@ public:
     virtual void applicationDidEnterBackground();
     virtual void applicationWillEnterForeground();
 
-	void preloadSFX();
+    void preloadSFX();
 
 };
 

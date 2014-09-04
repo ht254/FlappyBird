@@ -9,12 +9,12 @@ class MenuScene : public Layer
 {
 public:
 
-	static Scene* createScene();
-	virtual bool init();  
-	CREATE_FUNC(MenuScene);
+    static Scene* createScene();
+    virtual bool init();
+    CREATE_FUNC(MenuScene);
 
-	static void startGame(Ref* sender);
-	static void quitGame(Ref* sender);
+    static void startGame(Ref* sender);
+    static void quitGame(Ref* sender);
 
 };
 

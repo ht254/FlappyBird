@@ -10,17 +10,17 @@ class Pipe : public Node
 {
 public:
 
-	bool init();
-	CREATE_FUNC(Pipe);
+    bool init();
+    CREATE_FUNC(Pipe);
 
-	void setRandomPostionY();
-	float getPositionX();
-	void setPositionX(float x);
-	bool checkCollision(Bird* bird);
+    void setRandomPostionY();
+    float getPositionX();
+    void setPositionX(float x);
+    bool checkCollision(Bird* bird);
 
 private:
-	Sprite* upPipe;
-	Sprite* downPipe;
+    Sprite* upPipe;
+    Sprite* downPipe;
 
 };
 

@@ -10,31 +10,31 @@ class GameScene : public Layer
 {
 public:
 
-	static Scene* createScene();
-	bool init();
-	CREATE_FUNC(GameScene);
+    static Scene* createScene();
+    bool init();
+    CREATE_FUNC(GameScene);
 
-	void startPlay();
-	void gameOver();
+    void startPlay();
+    void gameOver();
 
-	void update(float dt);
-	void updateScore();
+    void update(float dt);
+    void updateScore();
 
-	int readRecord();
-	void writeRecord(int record);
+    int readRecord();
+    void writeRecord(int record);
 
-	bool onTouchBegan(Touch* touch, Event* event);
+    bool onTouchBegan(Touch* touch, Event* event);
 
 private:
 
-	enum class State { Tutorial, Playing, Falling, Gameover };
+    enum class State { Tutorial, Playing, Falling, Gameover };
 
-	bool cheating;
-	State state;
-	Label* scoreLabel;
-	Node* tutorialNode;
-	GameLayer* layer;
-	Bird* bird;
+    bool cheating;
+    State state;
+    Label* scoreLabel;
+    Node* tutorialNode;
+    GameLayer* layer;
+    Bird* bird;
 
 };
 
