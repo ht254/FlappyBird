@@ -1,4 +1,4 @@
 FlappyBird
 ============
 
-FlappyBird written with cocos2d-x.
+FlappyBird written in cocos2d-x.
