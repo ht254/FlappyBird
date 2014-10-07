@@ -1,4 +1,3 @@
-#include <fstream>
 #include "SimpleAudioEngine.h"
 #include "MenuScene.h"
 #include "GameScene.h"
