@@ -40,7 +40,7 @@ void Pipe::setPositionX(float x)
 bool Pipe::checkCollision(Bird* bird)
 {
     auto birdPos = bird->getPosition();
-    if (upPipe->getPositionX() < birdPos.x 
+    if (upPipe->getPositionX() < birdPos.x
             && birdPos.x < upPipe->getPositionX() + upPipe->getContentSize().width) {
         if (birdPos.y > downPipe->getPositionY() || birdPos.y < upPipe->getPositionY()) {
             return true;

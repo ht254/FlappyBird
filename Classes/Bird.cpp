@@ -20,15 +20,15 @@ bool Bird::init()
     auto animation = Animation::create();
     int which = rand() % 3;
     for (int i = 0; i < 3; ++i) {
-        auto imageName = String::createWithFormat(IMAGES_DIR "bird%d_%d.png", which, i);  
-        animation->addSpriteFrameWithFile(imageName->getCString()); 
+        auto imageName = String::createWithFormat(IMAGES_DIR "bird%d_%d.png", which, i);
+        animation->addSpriteFrameWithFile(imageName->getCString());
     }
 
     animation->setDelayPerUnit(0.2f);
     animation->setRestoreOriginalFrame(false);
     animation->setLoops(-1);
 
-    normalAnimation = Animate::create(animation);  
+    normalAnimation = Animate::create(animation);
     runAction(normalAnimation);
 
     // fallAnimation = EaseOut::create(RotateTo::create(0.6f, 90.0f), 0.4f);
