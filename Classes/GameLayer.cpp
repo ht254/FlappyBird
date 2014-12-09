@@ -27,7 +27,7 @@ bool GameLayer::init()
     bool isNight = hour <= 6 || hour >= 18;
     auto bg = Sprite::create(isNight ? IMG_BG_NIGHT : IMG_BG_DAY);
     bg->setPosition(visibleSize.width / 2, visibleSize.height / 2);
-    this->addChild(bg, 0);
+    addChild(bg, 0);
 
     land = Sprite::create(IMG_LAND);
     land->setAnchorPoint(Point(0, 0));
@@ -42,7 +42,7 @@ bool GameLayer::init()
         )
     );
     land->runAction(landAnimation);
-    this->addChild(land, 3);
+    addChild(land, 3);
 
     return true;
 }
@@ -53,7 +53,7 @@ void GameLayer::addPipes()
         auto pipe = Pipe::create();
         pipe->setPositionX(300 + visibleSize.width + pipeDistance * i);
         pipe->setRandomPostionY();
-        this->addChild(pipe);
+        addChild(pipe);
         pipes.push_back(pipe);
     }
 }

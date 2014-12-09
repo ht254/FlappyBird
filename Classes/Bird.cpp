@@ -13,9 +13,9 @@ bool Bird::init()
     visibleSize = Director::getInstance()->getVisibleSize();
     velocity = 0.0f;
     gravity = 18.0f;
-    state= State::Normal;
+    state = State::Normal;
 
-    // this->setAnchorPoint(Point(0.5f, 1.0f));
+    // setAnchorPoint(Point(0.5f, 1.0f));
 
     auto animation = Animation::create();
     int which = rand() % 3;
@@ -49,13 +49,13 @@ bool Bird::init()
 
 void Bird::update(float dt)
 {
-    float y = this->getPositionY() - velocity * dt;
+    float y = getPositionY() - velocity * dt;
     if (y > visibleSize.height) {
         y = visibleSize.height;
     }
-    this->setPositionY(y);
+    setPositionY(y);
     if (velocity < 0 && velocity + gravity >= 0) {
-        this->fall();
+        fall();
     }
     velocity += gravity;
 }
@@ -65,9 +65,9 @@ void Bird::flyUp()
     velocity = -360.0f;
     if (state != State::FlyingUp) {
         if (state == State::Falling) {
-            this->stopAction(fallAnimation);
+            stopAction(fallAnimation);
         }
-        this->runAction(flyAnimation);
+        runAction(flyAnimation);
         state = State::FlyingUp;
     }
 }
@@ -75,15 +75,15 @@ void Bird::flyUp()
 void Bird::fall()
 {
     if (state == State::FlyingUp) {
-        this->stopAction(flyAnimation);
-        this->runAction(fallAnimation);
+        stopAction(flyAnimation);
+        runAction(fallAnimation);
         state = State::Falling;
     }
 }
 
 void Bird::die()
 {
-    this->stopAllActions();
+    stopAllActions();
 }
 
 
