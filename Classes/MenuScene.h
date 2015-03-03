@@ -10,7 +10,7 @@ class MenuScene : public Layer
 public:
 
     static Scene* createScene();
-    virtual bool init();
+    bool init();
     CREATE_FUNC(MenuScene);
 
     static void startGame(Ref* sender);

@@ -4,6 +4,7 @@
 #include "Path.h"
 
 USING_NS_CC;
+using CocosDenshion::SimpleAudioEngine;
 
 
 bool AppDelegate::applicationDidFinishLaunching()
@@ -44,7 +45,7 @@ void AppDelegate::applicationDidEnterBackground()
     Director::getInstance()->stopAnimation();
 
     // if you use SimpleAudioEngine, it must be pause
-    // SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
+    SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
 }
 
 // this function will be called when the app is active again
@@ -53,12 +54,12 @@ void AppDelegate::applicationWillEnterForeground()
     Director::getInstance()->startAnimation();
 
     // if you use SimpleAudioEngine, it must resume here
-    // SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
+    SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 }
 
 void AppDelegate::preloadSFX()
 {
-    auto audioEngine = CocosDenshion::SimpleAudioEngine::getInstance();
+    auto audioEngine = SimpleAudioEngine::getInstance();
 
     audioEngine->preloadEffect(SFX_DIE);
     audioEngine->preloadEffect(SFX_HIT);

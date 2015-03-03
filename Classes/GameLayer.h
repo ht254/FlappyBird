@@ -12,7 +12,7 @@ class GameLayer : public Layer
 public:
 
     GameLayer();
-    virtual bool init();
+    bool init();
 
     void addPipes();
     void update(float dt);

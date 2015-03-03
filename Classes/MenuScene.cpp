@@ -5,6 +5,7 @@
 #include "Path.h"
 
 USING_NS_CC;
+using CocosDenshion::SimpleAudioEngine;
 
 Scene* MenuScene::createScene()
 {
@@ -54,7 +55,7 @@ bool MenuScene::init()
 
 void MenuScene::quitGame(Ref* sender)
 {
-    CocosDenshion::SimpleAudioEngine::getInstance()->end();
+    SimpleAudioEngine::getInstance()->end();
     Director::getInstance()->end();
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
@@ -68,5 +69,5 @@ void MenuScene::startGame(Ref* sender)
     auto gameScene = GameScene::createScene();
     auto transition = TransitionFade::create(1.0f, gameScene, Color3B(0, 0, 0));
     Director::getInstance()->replaceScene(transition);
-    CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(SFX_SWOOSHING);
+    SimpleAudioEngine::getInstance()->playEffect(SFX_SWOOSHING);
 }

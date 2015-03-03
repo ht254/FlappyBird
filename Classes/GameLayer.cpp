@@ -4,15 +4,16 @@
 #include "Path.h"
 
 USING_NS_CC;
+using CocosDenshion::SimpleAudioEngine;
 
-GameLayer::GameLayer():
-    speed(150),
-    pipeDistance(180),
-    pipeWidth(52),
-    score(0),
-    visibleSize(Director::getInstance()->getVisibleSize()),
-    origin(Director::getInstance()->getVisibleOrigin()),
-    pointX(visibleSize.width * 0.36f - 26)
+GameLayer::GameLayer()
+	: speed(150)
+	, pipeDistance(180)
+    , pipeWidth(52)
+    , score(0)
+    , visibleSize(Director::getInstance()->getVisibleSize())
+    , origin(Director::getInstance()->getVisibleOrigin())
+    , pointX(visibleSize.width * 0.36f - 26)
 {
 }
 
@@ -73,7 +74,7 @@ void GameLayer::update(float dt)
         float x = oldX - dt * speed;
         if (x <= pointX && pointX < oldX ) {
             ++score;
-            CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(SFX_POINT);
+            SimpleAudioEngine::getInstance()->playEffect(SFX_POINT);
         }
         pipe->setPositionX(x);
     }
