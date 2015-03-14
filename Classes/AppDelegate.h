@@ -1,11 +1,11 @@
-#ifndef  _APP_DELEGATE_H_
-#define  _APP_DELEGATE_H_
+#ifndef  __APP_DELEGATE_H__
+#define  __APP_DELEGATE_H__
 
 #include "cocos2d.h"
 
 USING_NS_CC;
 
-class  AppDelegate : private Application
+class AppDelegate : private Application
 {
 public:
 
@@ -17,5 +17,5 @@ public:
 
 };
 
-#endif // _APP_DELEGATE_H_
+#endif // __APP_DELEGATE_H__
 
