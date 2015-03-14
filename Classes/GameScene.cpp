@@ -176,15 +176,21 @@ void GameScene::gameOver()
         addChild(medal, 5);
     }
 
-    auto startBtn = Sprite::create(IMG_START_BTN);
-    auto startBtnPressed = Sprite::create(IMG_START_BTN_PRESSED);
-    auto startMenuItem = MenuItemSprite::create(startBtn, startBtnPressed, nullptr, MenuScene::startGame);
-
-    auto closeBtn = Sprite::create(IMG_CLOSE_BTN);
-    auto closeBtnPressed = Sprite::create(IMG_CLOSE_BTN_PRESSED);
-    auto closeMenuItem = MenuItemSprite::create(closeBtn, closeBtnPressed, nullptr, MenuScene::quitGame);
-
-    auto menu = Menu::create(startMenuItem, closeMenuItem, nullptr);
+    auto menu = Menu::create(
+        MenuItemSprite::create(
+            Sprite::create(IMG_START_BTN),
+            Sprite::create(IMG_START_BTN_PRESSED),
+            nullptr,
+            MenuScene::startGame
+        ),
+        MenuItemSprite::create(
+            Sprite::create(IMG_CLOSE_BTN),
+            Sprite::create(IMG_CLOSE_BTN_PRESSED),
+            nullptr,
+            MenuScene::quitGame
+        ),
+        nullptr
+    );
     menu->alignItemsHorizontally();
     menu->setPosition(midWidth, scrHeight * 0.3);
     addChild(menu, 4);
