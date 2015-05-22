@@ -42,8 +42,12 @@ CMakeCache.txt
 
 bin/
 CMakeFiles/
+cocos2d
 cocos2d/
+linux-build/
 proj.android/
 proj.ios_mac/
 proj.linux/
 proj.win32/
+proj.win8.1-universal/
+

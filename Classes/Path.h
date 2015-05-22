@@ -8,21 +8,13 @@
 #define FNT_FONT    FONTS_DIR"font.fnt"
 #define FNT_SCORE   FONTS_DIR"number_score.fnt"
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
-    #define SFX_DIE        MUSICS_DIR"sfx_die.wav"
-    #define SFX_HIT        MUSICS_DIR"sfx_hit.wav"
-    #define SFX_POINT      MUSICS_DIR"sfx_point.wav"
-    #define SFX_SWOOSHING  MUSICS_DIR"sfx_swooshing.wav"
-    #define SFX_WING       MUSICS_DIR"sfx_wing.wav"
-#endif
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     #define SFX_DIE        MUSICS_DIR"sfx_die.ogg"
     #define SFX_HIT        MUSICS_DIR"sfx_hit.ogg"
     #define SFX_POINT      MUSICS_DIR"sfx_point.ogg"
     #define SFX_SWOOSHING  MUSICS_DIR"sfx_swooshing.ogg"
     #define SFX_WING       MUSICS_DIR"sfx_wing.ogg"
-#endif
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+#else
     #define SFX_DIE        MUSICS_DIR"sfx_die.wav"
     #define SFX_HIT        MUSICS_DIR"sfx_hit.wav"
     #define SFX_POINT      MUSICS_DIR"sfx_point.wav"
