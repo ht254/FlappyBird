@@ -7,8 +7,8 @@ USING_NS_CC;
 using CocosDenshion::SimpleAudioEngine;
 
 GameLayer::GameLayer()
-	: speed(150)
-	, pipeDistance(180)
+    : speed(150)
+    , pipeDistance(180)
     , pipeWidth(52)
     , score(0)
     , visibleSize(Director::getInstance()->getVisibleSize())
