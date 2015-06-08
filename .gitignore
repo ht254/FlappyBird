@@ -38,7 +38,9 @@ Icon
 .ropeproject/
 *.sublime-*
 
+Makefile
 CMakeCache.txt
+cmake_install.cmake
 
 bin/
 CMakeFiles/
