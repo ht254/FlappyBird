@@ -48,3 +48,5 @@ cocos2d
 cocos2d/
 linux-build/
 
+.idea/
+
