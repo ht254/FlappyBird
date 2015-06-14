@@ -1,6 +1,5 @@
 #include "SimpleAudioEngine.h"
 #include "GameLayer.h"
-#include "Bird.h"
 #include "Path.h"
 
 USING_NS_CC;
