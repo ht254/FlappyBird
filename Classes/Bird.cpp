@@ -1,4 +1,3 @@
-#include "SimpleAudioEngine.h"
 #include "Bird.h"
 #include "Path.h"
 
