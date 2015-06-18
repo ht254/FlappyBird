@@ -52,7 +52,7 @@ void GameLayer::addPipes()
     for (int i = 0; i < 3; ++i) {
         auto pipe = Pipe::create();
         pipe->setPositionX(300 + visibleSize.width + pipeDistance * i);
-        pipe->setRandomPostionY();
+        pipe->setRandomPositionY();
         addChild(pipe);
         pipes.push_back(pipe);
     }
@@ -65,7 +65,7 @@ void GameLayer::update(float dt)
         if (pipe->getPositionX() < -pipeWidth) {
             auto prePipe = pipes[i == 0 ? pipes.size() - 1 : i - 1];
             pipe->setPositionX(prePipe->getPositionX() + pipeDistance);
-            pipe->setRandomPostionY();
+            pipe->setRandomPositionY();
         }
     }
     for (auto pipe : pipes) {

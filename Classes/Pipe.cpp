@@ -18,7 +18,7 @@ bool Pipe::init()
     return true;
 }
 
-void Pipe::setRandomPostionY()
+void Pipe::setRandomPositionY()
 {
     float gap = 100;
     float mid = 112 + 200 + CCRANDOM_MINUS1_1() * gap;

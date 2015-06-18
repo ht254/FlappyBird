@@ -13,7 +13,7 @@ public:
     bool init();
     CREATE_FUNC(Pipe);
 
-    void setRandomPostionY();
+    void setRandomPositionY();
     float getPositionX();
     void setPositionX(float x);
     bool checkCollision(Bird* bird);
