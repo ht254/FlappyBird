@@ -56,3 +56,5 @@ proj.android/gen/
 proj.android/obj/
 proj.android/libs/
 
+.ycm_extra_conf.py*
+
