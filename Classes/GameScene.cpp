@@ -77,11 +77,13 @@ void GameScene::update(float dt)
         bird->update(dt);
         layer->update(dt);
         if (!cheating && layer->checkCollision(bird)) {
+            audioEngine->stopAllEffects();
             audioEngine->playEffect(SFX_HIT);
             layer->stop();
             bird->fall();
             state = State::Falling;
         } else if (layer->hitGround(bird)) {
+            audioEngine->stopAllEffects();
             audioEngine->playEffect(SFX_DIE);
             layer->stop();
             bird->die();
@@ -91,6 +93,7 @@ void GameScene::update(float dt)
     } else if (state == State::Falling) {
         bird->update(dt);
         if (layer->hitGround(bird)) {
+            audioEngine->stopAllEffects();
             audioEngine->playEffect(SFX_DIE);
             bird->die();
             gameOver();

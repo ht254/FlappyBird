@@ -44,8 +44,6 @@ cmake_install.cmake
 
 bin/
 CMakeFiles/
-cocos2d
-cocos2d/
 linux-build/
 
 .idea/
