@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+SCRIPTPATH=`dirname "${BASH_SOURCE[0]}"`
+cd "$SCRIPTPATH"
+
+PYTHON=python
+if hash python2 > /dev/null 2>&1; then
+  PYTHON=python2
+fi
+
+exec $PYTHON "./cocos2d/tools/cocos2d-console/bin/cocos.py" "$@"
+
