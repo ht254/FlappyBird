@@ -17,3 +17,7 @@ cd FlappyBird
 ![](http://i.imgur.com/w2ewXhj.png)
 ![](http://i.imgur.com/Fwadijc.png)
 
+## License
+
+[MIT License](LICENSE)
+
