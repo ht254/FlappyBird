@@ -54,5 +54,11 @@ proj.android/gen/
 proj.android/obj/
 proj.android/libs/
 
-.ycm_extra_conf.py*
 
+# proj.win32
+proj.win32/.vs/
+proj.win32/Debug.win32/
+proj.win32/Release.win32/
+proj.win32/*.sdf
+
+.ycm_extra_conf.py*
