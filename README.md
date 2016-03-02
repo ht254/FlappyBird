@@ -12,10 +12,32 @@ cd FlappyBird
 
 ## Screenshots
 
-![](https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/1.png)
-![](https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/2.png)
-![](https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/3.png)
-![](https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/4.png)
+<table>
+    <tr>
+        <td width="50%">
+            <a href="https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/1.png">
+                <img src="https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/1.png" width="100%">
+            </a>
+        </td>
+        <td width="50%">
+            <a href="https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/2.png">
+                <img src="https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/2.png" width="100%">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td width="50%">
+            <a href="https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/3.png">
+                <img src="https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/3.png" width="100%">
+            </a>
+        </td>
+        <td width="50%">
+            <a href="https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/4.png">
+                <img src="https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/4.png" width="100%">
+            </a>
+        </td>
+    </tr>
+</table>
 
 ## License
 
