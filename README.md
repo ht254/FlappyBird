@@ -12,10 +12,10 @@ cd FlappyBird
 
 ## Screenshots
 
-![](http://i.imgur.com/KOd8h0a.png)
-![](http://i.imgur.com/f72z0Xh.png)
-![](http://i.imgur.com/w2ewXhj.png)
-![](http://i.imgur.com/Fwadijc.png)
+![](https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/1.png)
+![](https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/2.png)
+![](https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/3.png)
+![](https://raw.githubusercontent.com/zlsun/screenshots/master/FlappyBird/4.png)
 
 ## License
 
